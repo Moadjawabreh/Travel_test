@@ -1,0 +1,48 @@
+.why-choose-us {
+        margin: 8em 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+    padding: 2em;
+}
+
+.container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 25em;
+    height: 15em;   
+    text-align: center;
+    padding: 5em 2em;
+    border-radius: 1em;
+    box-shadow: 0 0 1em 0.5em rgba(65, 64, 64, 0.041);
+}
+
+.container .box i {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 2em;
+    padding: 1em;
+    width: 1em;
+    height: 1em;
+    border-radius:  var(--border-radius);
+    margin-bottom: 1em;
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .box {
+        width: 100%;
+    }
+}

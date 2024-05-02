@@ -1,0 +1,46 @@
+.services {
+    padding: 5em 0;
+    text-align: center;
+    background-image: url(https://wp1.themevibrant.com/newwp/travic/wp-content/uploads/2024/01/shape-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.services .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.services .box {
+    width: 19em;
+    padding: 2em;
+    background-color: transparent;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.services .box i {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    background-color: var(--glass-orange);
+    padding: 1em;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    text-align: center;
+}
+
+
+
+/* responsive */
+@media (max-width: 768px) {
+    .services .box {
+        width: 100%;
+    }
+}

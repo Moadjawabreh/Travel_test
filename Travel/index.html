@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/full-width-left-image-con.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/hr.css">
+    <link rel="stylesheet" href="css/heading.css">
+    <link rel="stylesheet" href="css/box-container.css">
+    <link rel="stylesheet" href="css/animations.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <title>Travel</title>
+
+    <body>
+        
+        <!-- Header -->
+        <header>
+            <a href="index.html" ><img class="logo" src="Images/logo.jpg" alt=""></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="navbar fade-in">
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-links fade-in" data-translate="homeNav"></a></li>
+                    <li><a href="hotels.html" class="nav-links fade-in" data-translate="hotelsNav"></a></li>
+                    <li><a href="destination.html" class="nav-links fade-in" data-translate="destinationNav"></a></li>
+                    <li><a href="contact.html" class="nav-links fade-in" data-translate="contactNav"></a></li>
+                    <li><a href="about.html" class="nav-links fade-in" data-translate="aboutNav"></a></li>
+                    <div id="language-selector">    
+                      <select id="language" onchange="changeLanguage()">
+                          <option value="en">English</option>
+                          <option value="ar">العربية</option>
+                          <option value="tr">Türkçe</option>
+                        </select>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <!--  Hero -->
+        <section class="hero" id="home">
+            <div class="video-container">
+                <video src="video.mp4" autoplay muted loop></video>
+            </div>
+            <div class="content fade-in">
+                <div>
+                    <p data-translate="heroFirstParagraph"></p>
+                    <h1 data-translate="heroHeading"></h1><h1 class="changing-text" id="textElement" style="display: inline;"></h1>
+                </div>
+                <div class="social-media ">
+                    <a href="#"><i class="fab fa-facebook-f fade-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter fade-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram fade-in"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fade-in"></i></a>
+                </div>
+            </div>
+        </section>
+       
+
+        <!-- Full width left image content -->
+        <div class="full-width-left-image-con fade-in" style="margin-top: 5em;">
+            <div class="left-image fade-in">
+                <img src="https://p0.pikist.com/photos/674/305/amazing-andaman-sea-angle-background-bait-bay-bay-view-beach-beautiful.jpg" alt="">
+            </div>
+
+            <div class="right-content heading fade-in">
+                <div>
+                    <h3 data-translate="explore"></h3>
+                    <h1 data-translate="exploreHeading"></h1>
+                </div>
+                <p data-translate="exploreParagraph"></p>
+                <a href="" class="btn reserver-btn fade-in" data-translate="bookBtn"></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Best destinations -->
+        <section class="destinations boxes-sec">
+            <div class="heading">
+                <h3 data-translate="destinations" class="fade-in"></h3>
+                <h1 data-translate="destinationsHeading" class="fade-in"></h1>
+            </div>
+            <div class="box-container fade-in">
+                <div class="box fade-in">
+                    <img src="https://preview.colorlib.com/theme/passport/images/about_1.jpg" alt="">
+                    <div class="content fade-in">
+                        <h3 data-translate="place1">Place 1</h3>
+                        <p data-translate="place1Paragraph"></p>
+                        <a href="https://wa.me/1234567890" class="btn2" data-translate="bookBtn"></a>
+                    </div>
+                </div>
+                        <div class="box fade-in">
+                            <img src="https://preview.colorlib.com/theme/passport/images/about_3.jpg" alt="">
+                            <div class="content fade-in">
+                                <h3 data-translate="place2">Place 2</h3>
+                                <p data-translate="place2Paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="https://wa.me/1234567890" class="btn2" data-translate="bookBtn">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="box fade-in">
+                            <img src="https://preview.colorlib.com/theme/passport/images/about_2.jpg" alt="">
+                            <div class="content fade-in">
+                                <h3 data-translate="place3">Place 3</h3>
+                                <p data-translate="place3Paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="https://wa.me/1234567890" class="btn2" data-translate="bookBtn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="destination.html" class="btn fade-in" data-translate="viewAllBtn">View All</a>
+                </section>
+
+                    
+                <!-- Services -->
+                <section class="services fade-in" id="services">
+                    <div class="heading">
+                        <h3 data-translate="ourService" class="fade-in">Our Serrvice...</h3>
+                        <h1 data-translate="servicesHeading" class="fade-in">Services We Offer</h1>
+                    </div>
+                    <div class="box-container">
+                        <div class="box fade-in">
+                            <i class="fas fa-hotel"></i>
+                            <h3 data-translate="serrvice1">Hotel</h3>
+                            <p data-translate="serrvice1Paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perferendis sunt explicabo aperiam? </p>
+                        </div>
+                        <div class="box fade-in">
+                            <i class="fas fa-utensils"></i>
+                            <h3 data-translate="serrvice2">Food</h3>
+                            <p data-translate="serrvice2Paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perferendis sunt explicabo aperiam? </p>
+                        </div>
+                        <div class="box fade-in">
+                            <i class="fas fa-plane"></i>
+                            <h3 data-translate="serrvice3">Flights</h3>
+                            <p data-translate="serrvice3Paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perferendis sunt explicabo aperiam? </p>
+                        </div>
+                        <div class="box fade-in">
+                            <i class="fas fa-bus"></i>
+                            <h3 data-translate="serrvice4">Transport</h3>
+                            <p data-translate="serrvice4Paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perferendis sunt explicabo aperiam? </p>
+                        </div>
+                        <div class="box fade-in">
+                            <i class="fas fa-map"></i>
+                            <h3 data-translate="serrvice5">Guides</h3>
+                            <p data-translate="serrvice5Paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perferendis sunt explicabo aperiam? </p>
+                        </div>
+                        <div class="box fade-in">
+                            <i class="fas fa-umbrella-beach"></i>
+                            <h3 data-translate="serrvice6">Beaches</h3>
+                            <p data-translate="serrvice6Paragraph">Lorem ipsum dolor sit amet consectetur adipisic</p>
+                        </div>
+                        <div class="box fade-in">
+                            <i class="fas fa-mountain"></i>
+                            <h3 data-translate="serrvice7">Mountains</h3>
+                            <p data-translate="serrvice7Paragraph"> Officia perferendis sunt explicabo aperiam? </p>
+                        </div>
+                        <div class="box fade-in">
+                            <i class="fas fa-city"></i>
+                            <h3 data-translate="serrvice8">Cities</h3>
+                            <p data-translate="serrvice8Paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perferendis sunt explicabo aperiam? </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 100% width video with over text that says "We are here to help you" and a button that says "Contact Us" -->
+                <section class="video-section">
+                    <video src="https://www.yuppitravel.com/wp-content/uploads/2023/04/responsibletravelcompress-1.mp4" autoplay loop muted></video>
+                    <div class="video-overlay">
+                        <h1 data-translate="helpText" class="fade-in">We are here to help you</h1>
+                        <a href="contact.html" class="btn fade-in" data-translate="contactBtn">Contact Us</a>
+                    </div>
+                </section>
+                    
+
+                <!-- hotels -->
+                <section class="hotels-sec boxes-sec fade-in">
+                    <div class="heading fade-in">
+                        <h3 data-translate="hotels" class="fade-in">Hotels...</h3>
+                        <h1 data-translate="popularHotels" class="fade-in">Popular Hotels</h1>
+                    </div>
+                    <div class="box-container">
+                        <div class="box">
+                            <img src="https://fthmb.tqn.com/kbrbsnldpCYD2nnrutRrgjiFP3I=/4288x2848/filters:fill(auto,1)/bellagionight-56a43e175f9b58b7d0d5fe06.jpg" alt="">
+                            <div class="content">
+                                <h3 data-translate="hotel1"></h3>
+                                <p data-translate="hotel1Paragraph"></p>
+                                <a href="https://wa.me/1234567890" class="btn2" data-translate="bookBtn"></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="https://source.unsplash.com/random/800x601" alt="">
+                            <div class="content">
+                                <h3 data-translate="hotel2">Hotel 2</h3>
+                                <p data-translate="hotel2Paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="https://wa.me/1234567890" class="btn2" data-translate="bookBtn">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="https://source.unsplash.com/random/800x602" alt="">
+                            <div class="content">
+                                <h3 data-translate="hotel3">Hotel 3</h3>
+                                <p data-translate="hotel3Paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="https://wa.me/1234567890" class="btn2" data-translate="bookBtn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="hotels.html" class="btn fade-in" data-translate="viewAllBtn">View All</a>
+                </section>
+
+                <footer class="fade-in">
+                    <div class="box-container">
+                        <div class="box">
+                            <h3 data-translate="travel">Travel</h3>
+                            <p data-translate="footerParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="box">
+                            <h3 data-translate="quickLinks">Quick Links</h3>
+                            <a href="index.html" class="nav-links" data-translate="homeNav"></a>
+                            <a href="hotels.html" class="nav-links" data-translate="hotelsNav"></a>
+                            <a href="destination.html" class="nav-links" data-translate="destinationNav"></a>
+                            <a href="contact.html" class="nav-links" data-translate="contactNav"></a>
+                            <a href="about.html" class="nav-links" data-translate="aboutNav"></a>
+                        </div>
+                        <div class="box">
+                            <h3 data-translate="contact">Contact</h3>
+                            <p data-translate="location"></p>
+                            <a href="#">+1234567890</a>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h6 class="credit">Copyright © 2024 tikramtravel 
+                         | All rights reserved!</h6>
+                </footer>
+                <script src="app.js"></script>
+                <script src="language.js"></script>
+    </body>
+    </html>

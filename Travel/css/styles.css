@@ -1,0 +1,73 @@
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --primary-color: #f8a436;
+    --secondary-color: #F2F2F2;
+    --background-color: #FFFFFF; 
+
+    --glass-orange: rgba(253, 183, 103, 0.26);
+    
+    --border-radius: 0.4em;
+
+    --font-family1: 'Poppins', 'Cairo', 'Roboto', 'sans-serif';
+    --font-family2: 'Seaweed Script', cursive;
+
+    --transition: all 0.3s ease;
+
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    --box-shadow-hover: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    color: var(--text-color);
+    font-family: var(--font-family1);
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: calc(1.5em + 1vw);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+
+
+/* Scrollbar Styles */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.logo {
+    width: 9rem;
+    height: auto;
+margin: 0 auto; /* Center the logo horizontally */
+display: block; /* Ensure the logo is treated as a block element */
+border-radius: 5px; /* Add a slight border radius for a softer look */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
