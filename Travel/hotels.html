@@ -55,6 +55,96 @@
   </head>
 
   
+  <style>
+    .social-icons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        border-radius: 20px; /* Rounded corners */
+    
+      }
+    
+      .social-icons a {
+        display: inline-block;
+        margin: 10px 0;
+        color: #333;
+        font-size: 24px;
+        background-color: #f8a436; /* Blue background color */
+        background-color: #f8a436; /* Blue background color */
+        color: #fff; /* White icon color */
+        border-radius: 50%; /* Circle-shaped icons */
+        padding: 10px; /* Add padding for spacing */
+        transition: background-color 0.3s ease; /* Smooth transition */
+        text-decoration: none;
+        transition: transform 0.3s ease;
+      }
+    
+      .social-icons a:hover {
+        color: #007bff;
+        transform: scale(1.2);
+      }
+    
+      .social-icons a i {
+        transition: color 0.3s ease;
+      }
+    
+      .social-icons a:hover i {
+        color: #007bff;
+      }
+        /* @media screen and (max-width: 768px) {
+          .social-icons {
+            flex-direction: column;
+            bottom: auto;
+            padding: auto;
+            top: 500px;
+        position: fixed;
+        background: seashell;
+        right: 14rem;
+        border-radius: inherit;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+        } */
+    
+        @media screen and (max-width: 768px) {
+  .social-icons {
+    position: fixed;
+    bottom: auto;
+    padding: 10px; /* Add padding for spacing */
+    top: 400px; /* Adjust the top position as needed */
+    right: 12rem;
+    border-radius: 100px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .social-icons a {
+    margin: 10px 0; /* Adjust margin for spacing */
+    background-color: #f8a436; /* Blue background color */
+    color: #fff; /* White icon color */
+    border-radius: 50%; /* Circle-shaped icons */
+    padding: 10px; /* Add padding for spacing */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+
+  .social-icons a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+
+
+
+}
+      </style>
+    
   
   <body>
     <!-- Header -->

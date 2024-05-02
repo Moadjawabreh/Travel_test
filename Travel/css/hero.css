@@ -1,104 +1,105 @@
 section.hero {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--secondary-color);
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 section.hero .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 section.hero .video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 section.hero .content {
-    z-index: 1;
+  z-index: 20;
 }
 
-section.hero h1{
-    margin: 0;
-    font-size: 3em;
+section.hero h1 {
+  margin: 0;
+  font-size: 3em;
 }
 
 section.hero p {
-    font-size: 2.4em;
-    margin-bottom: 1em;
-    font-family: var(--font-family2);
-    color: var(--primary-color);
-    margin: 0;
+  font-size: 2.4em;
+  margin-bottom: 1em;
+  font-family: var(--font-family2);
+  color: var(--primary-color);
+  margin: 0;
 }
 
 section.hero .social-media {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 2em;
-    align-self: start;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+  align-self: start;
 }
 
 section.hero .social-media a {
-    width: 1.5em;
-    font-size: 1.5em;
-    color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
-    padding: 0.5em;
-    border-radius: 50%;
-    transition: all 0.3s ease;
+  width: 1.5em;
+  font-size: 1.5em;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  padding: 0.5em;
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
 
 section.hero .social-media a:hover {
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .video-section {
-    position: relative;
-    width: 100%;
-    height: 70vh;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
 }
 .video-section video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .video-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
-    color: white;
-    text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  color: white;
+  text-align: center;
 }
 
 .video-overlay h2 {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
